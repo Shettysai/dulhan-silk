@@ -12,7 +12,6 @@ router.post('/', upload.array('images', 4), async (req, res) => {
   // res.send(imagesUrl);
 
   // Version 2:
-  console.log(`uploading`);
   const uploader = async (path) =>
     await cloudinary(path, 'fashionshop/products');
 

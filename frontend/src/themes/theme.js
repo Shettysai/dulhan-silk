@@ -1,4 +1,4 @@
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createTheme } from '@material-ui/core/styles';
 import {
   flexMixin,
   centerFlex,
@@ -7,7 +7,7 @@ import {
   breadcrumbs,
 } from './mixins';
 
-const theme = createMuiTheme({
+const theme = createTheme({
   typography: {
     fontFamily: ['Jost', 'Poppins', 'sans-serif'].join(','),
   },

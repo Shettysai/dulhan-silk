@@ -152,7 +152,12 @@ const ProductEditScreen = ({ match, history }) => {
     const filesArray = Array.from(files);
     setImages([...images, ...filesArray]);
     const imagesUrl = filesArray.map((image) => URL.createObjectURL(image));
-    setPreviewImages([...previewImages, ...imagesUrl]);
+    if (previewImages?.length > 0) {
+      setPreviewImages([...previewImages, ...imagesUrl]);
+    } else {
+      setPreviewImages([...imagesUrl]);
+
+    }
   };
 
   const submitHandler = async (e) => {
@@ -163,6 +168,7 @@ const ProductEditScreen = ({ match, history }) => {
 
     if (images.length > 0) {
       for (let i = 0; i < images.length; i++) {
+        console.log(images[i]);
         formData.append('images', images[i]);
       }
       setUploading(true);
@@ -330,7 +336,7 @@ const ProductEditScreen = ({ match, history }) => {
                     </Button>
                   </label>
                   <Box my={2} display='flex' flexWrap='wrap'>
-                    {previewImages.map((image) => (
+                    {previewImages?.map((image) => (
                       <div className={classes.imagePreview} key={image}>
                         <img src={image} alt='' />
                         <IconButton
@@ -442,12 +448,12 @@ const ProductEditScreen = ({ match, history }) => {
                 _id={''}
                 name={name}
                 images={
-                  previewImages.length !== 0
+                  previewImages?.length !== 0
                     ? previewImages
                     : [
-                        'https://via.placeholder.com/300x400?text=Fashion+Shop',
-                        'https://via.placeholder.com/300x400?text=Fashion+Shop',
-                      ]
+                      'https://via.placeholder.com/300x400?text=Dulhan+Silk',
+                      'https://via.placeholder.com/300x400?text=Dulhan+Silk',
+                    ]
                 }
                 price={price}
                 sale={sale}

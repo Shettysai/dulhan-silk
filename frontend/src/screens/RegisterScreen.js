@@ -7,7 +7,7 @@ import { register } from '../actions/userActions';
 import { Link as RouterLink } from 'react-router-dom';
 import {
   makeStyles,
-  createMuiTheme,
+  createTheme,
   ThemeProvider,
 } from '@material-ui/core/styles';
 import { useForm, FormProvider } from 'react-hook-form';
@@ -28,7 +28,7 @@ import backgroundImage from '../assets/images/background.jpg';
 import { VscEyeClosed, VscEye } from 'react-icons/vsc';
 import { BiArrowBack } from 'react-icons/bi';
 
-const theme = createMuiTheme({
+const theme = createTheme({
   typography: {
     fontFamily: ['Poppins', 'sans-serif'].join(','),
   },

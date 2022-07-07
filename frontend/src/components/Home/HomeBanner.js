@@ -1,11 +1,11 @@
 import { Button, Grid } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import bannerImage1 from '../../assets/images/banner_1.jpg';
 import bannerImage2 from '../../assets/images/banner_2.jpg';
 import React from 'react';
 
-const theme = createMuiTheme({
+const theme = createTheme({
   breakpoints: {
     values: { xs: 0, sm: 760, md: 960, lg: 1200, xl: 1400 },
   },

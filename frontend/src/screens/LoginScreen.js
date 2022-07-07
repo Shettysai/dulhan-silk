@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { login } from '../actions/userActions';
 import {
   makeStyles,
-  createMuiTheme,
+  createTheme,
   ThemeProvider,
 } from '@material-ui/core/styles';
 import { ReactComponent as LoginImage } from '../assets/images/login-illu.svg';
@@ -27,7 +27,7 @@ import { useForm, FormProvider } from 'react-hook-form';
 import { VscEyeClosed, VscEye } from 'react-icons/vsc';
 import { BiArrowBack } from 'react-icons/bi';
 
-const theme = createMuiTheme({
+const theme = createTheme({
   typography: {
     fontFamily: ['Poppins', 'sans-serif'].join(','),
   },

@@ -407,9 +407,9 @@ const ProductCreateScreen = ({ history }) => {
               previewImages.length !== 0
                 ? previewImages
                 : [
-                    'https://via.placeholder.com/300x400?text=Fashion+Shop',
-                    'https://via.placeholder.com/300x400?text=Fashion+Shop',
-                  ]
+                  'https://via.placeholder.com/300x400?text=Fashion+Shop',
+                  'https://via.placeholder.com/300x400?text=Fashion+Shop',
+                ]
             }
             price={price}
             sale={sale}
