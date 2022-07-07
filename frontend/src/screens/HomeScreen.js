@@ -27,6 +27,12 @@ const HomeScreen = ({ location }) => {
     dispatch(listTopProducts(1, 8));
   }, [dispatch]);
 
+  useEffect(() => {
+     if(!productTop){
+      window.alert('No products');
+     }
+  }, [productTop]);
+
   return (
     <>
       <Meta />
@@ -47,7 +53,7 @@ const HomeScreen = ({ location }) => {
         ) : (
           <>
             <Grid container spacing={3}>
-              {productTop.map((product) => (
+              {productTop?.map((product) => (
                 <Grid item xs={12} sm={6} md={4} lg={3} key={product._id}>
                   <ProductCard {...product} />
                 </Grid>
