@@ -1,5 +1,5 @@
 
-# Fashion Shop v2.0
+# DulhanSilk v2.0
 
 Modern and stylish e-commerce website
 

@@ -33,7 +33,7 @@ const ShareButtons = ({ url, quote, size }) => {
 };
 
 ShareButtons.defaultProps = {
-  quote: 'Fashion Shop',
+  quote: 'DulhanSilk',
   size: 32,
 };
 
