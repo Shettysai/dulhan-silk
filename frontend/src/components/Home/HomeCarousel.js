@@ -7,23 +7,23 @@ import { Carousel } from 'react-responsive-carousel';
 const dataCarousel = [
   {
     image:
-      'https://res.cloudinary.com/phongbuiduy/image/upload/v1623085103/fashionshop/carousel/monigote_gnzuhj.jpg',
-    subtitle: "SUMMER '21",
-    title: 'Night Summer Dresses',
+      'https://res.cloudinary.com/dulhansilk/image/upload/v1657353919/dulhansilk/posters/land-silk_1_e3vuoz.jpg',
+    subtitle: "AASHADAM '22",
+    title: 'Ikkat Mela',
     position: 'left',
   },
   {
     image:
-      'https://res.cloudinary.com/phongbuiduy/image/upload/v1623085132/fashionshop/carousel/curly_hair_white-1_x4bo5v.jpg',
-    subtitle: '50% OFF',
-    title: 'New Cocktail Dresses',
+      'https://res.cloudinary.com/dulhansilk/image/upload/v1657353916/dulhansilk/posters/land-kanmanie-min_kqs7kf.jpg',
+    subtitle: '20% OFF',
+    title: 'Chittinad Plain',
     position: 'right',
   },
   {
     image:
-      'https://res.cloudinary.com/phongbuiduy/image/upload/v1623085147/fashionshop/carousel/curly_hair_girl-1_rus3zv.jpg',
-    subtitle: "SPRING/SUMMER '21",
-    title: 'The Weekent Getaway',
+      'https://res.cloudinary.com/dulhansilk/image/upload/v1657353914/dulhansilk/posters/land-exc_zrie6t.jpg',
+    subtitle: "Ikkat Mela '22",
+    title: 'Grand Design',
     position: 'left',
   },
 ];
@@ -33,6 +33,7 @@ const HomeCarousel = () => {
     <div>
       <Carousel
         autoPlay
+        styles= {{minHeight: '900px'}}
         interval={5000}
         infiniteLoop
         showIndicators
